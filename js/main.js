@@ -11,16 +11,18 @@
 //     })
 // })
 
+// $(function(){
+// $('.button_more').on('click', function(){
+//     $('#exampleModal').arcticmodal();
+
+// })
+// });
 $(function(){
-$('.button_more').on('click', function(){
-    $('#exampleModal').arcticmodal();
-
+    $('.regular').slick({
+        dots: true,
+        infinite: true,
+      });
 })
-});
-
-
-
-
 
 
 

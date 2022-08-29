@@ -131,7 +131,7 @@ h2{
 /* Первый экран */
 
 header{
-    background:#2c3f55 url('/img/header__bg.png') no-repeat top center / cover;
+    background:#2c3f55 url('/img/webP/header__bg.webp') no-repeat top center / cover;
    
 }
 nav{
@@ -242,20 +242,20 @@ nav{
 
 
 #moving{
-    background: url('/img/move__bg.png') no-repeat top center / cover;
+    background: url('/img/webP/move__bg.webp') no-repeat top center / cover;
 }
 .moving__overlay{
     background:rgba(2, 31, 63, 0.8);
     padding: 90px 0 97px 0;
 }
-.moving__help {
+/* .moving__help {
     padding: 0 170px;
-}
+} */
 .moving__paragraph{
     font-family: 'MuseoSansCyrl-100';
     font-size: 1.058rem;
     font-style: italic;
-    padding: 25px 160px 12px;
+    /* padding: 25px 160px 12px; */
     margin: 0;
 }
 .moving__paragraph-author{
@@ -321,7 +321,7 @@ nav{
 }
 /* transervice */
 #transervice{
-    background: url('../img/transervice__bg.png') no-repeat bottom center / cover;
+    background: url('../img/webP/transervice__bg.webp') no-repeat bottom center / cover;
     
 }
 .transervice_padding{
@@ -332,7 +332,9 @@ nav{
 }
 .wrap__transervice{
     position: relative;
-    padding: 0 170px;
+    width: 80%;
+    margin: 0 auto;
+    /* padding: 0 170px; */
 }
 .wrap__images{
     position: relative;
@@ -403,15 +405,17 @@ nav{
     top: 40px;
 }
 /* review */
+
+.container__slider{
+    margin: 0 50px;
+}
 #review{
     padding: 90px 0;
 }
 .review__sliderWrap{
     margin-top: 65px;
-    padding: 0 70px;
-    height: 300px;
 }
-.wrapReview__sliderArrow{
+/* .wrapReview__sliderArrow{
    margin-top: -110px;
     position: relative;
 }
@@ -422,11 +426,12 @@ nav{
 .wrapReview__sliderArrowRight{
     position: absolute;
     right: 0;
-}
+} */
 
 .review__slider{
     position: relative;
     padding: 50px 0;
+    height: 208px;
     background-color: #e9e9e9;
     margin: 0 140px;
     left: 30px;
@@ -448,7 +453,7 @@ nav{
     padding: 0 40px 0px 100px;
 }
 .review__paragraph{
-    margin-top: 24px;
+    padding: 24px 0;
 }
 .review__name{
     font-size: 0.941rem;
@@ -492,7 +497,7 @@ nav{
 }
 /* consultationBlock */
 #consultationBlock{
-    background: url('../img/confusing-background.png') top center / cover;
+    background: url('../img/webP/confusing-background.webp') top center / cover;
     background-color: #23aae2;
     padding: 75px 0;
 }
@@ -650,14 +655,14 @@ footer{
     margin-bottom: 0;
 }
 .contacts__leftBlockPhoneNumber{
-    background: url('../img/CellPhone.png') no-repeat left center;
+    background: url('../img/webP/CellPhone.webp') no-repeat left center;
 }
 .contacts__leftBlockEmail{
-    background: url('../img/Email.png') no-repeat left center;
+    background: url('../img/webP/Email.webp') no-repeat left center;
 
 }
 .contacts__leftBlockSkype{
-    background: url('../img/Skype.png') no-repeat left center;
+    background: url('../img/webP/Skype.webp') no-repeat left center;
 }
 
 /* about */
@@ -691,3 +696,69 @@ footer{
     height: 480px;
     overflow: hidden;
 }
+
+/* slider */
+
+* {
+    box-sizing: border-box;
+  }
+/* 
+  .slider {
+      width: 85%;
+      margin: 100px auto;
+  }
+
+  .slick-slide {
+    margin: 0px 0px;
+  } */
+
+  /* .slick-slide img {
+    width: 100%;
+  } */
+
+  .slick-prev:before,
+  .slick-next:before {
+    content: '';
+  }
+
+
+  .slick-slide {
+    transition: all ease-in-out .3s;
+  }
+/*   
+  .slick-active {
+    opacity: 1;
+  }
+
+  .slick-current {
+    opacity: 1;
+  } */
+
+  .slick-prev{
+    background: url('../img/arrowLeft.png') center top / cover;;
+  }
+  .slick-next{
+    background: url('../img/arrowRight.png') center top / cover;
+  }
+  .slick-prev:hover, .slick-prev:focus{
+    background: url('../img/arrowLeft.png') center top / cover;
+  }
+  .slick-next:hover, .slick-next:focus{
+    background: url('../img/arrowRight.png') center top / cover;
+  }
+  .slick-dots li button:before{
+    content: '';
+    margin: 0 4px;
+    border: 2px dashed #23aae2;
+    border-radius:360px;
+    opacity: 1;
+  }
+  .slick-dots li.slick-active button:before{
+    background-color:#23aae2;
+    opacity:1;
+  }
+  .slick-dots{
+    bottom: -50px;
+  }
+
+  /* slider end */
